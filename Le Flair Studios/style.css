@@ -1,0 +1,763 @@
+.section2,
+.section3,
+.section4 {
+    background-color: #e0e0e0;
+}
+
+body {
+    letter-spacing: -.02em;
+    font-family: nhr, sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+    background-color: #ffffff;
+}
+
+/* ........... navbar ............ */
+
+@media (min-width:768px) {
+    .navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: transparent;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    .navbar.sticky {
+        position: sticky;
+        top: 0;
+        background-color: black;
+    }
+}
+
+.navbar-toggler {
+    display: block;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='white' d='M1.5 12.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+}
+
+
+.nav-link {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        position: sticky;
+        top: 0;
+        background-color: #f1f1f1;
+        z-index: 999;
+    }
+
+    .nav-link {
+        color: black;
+        font-size: 15px;
+    }
+
+    .nav-link:hover {
+        color: black;
+        opacity: 0.8;
+    }
+
+    .nav-btn {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' d='M1.5 12.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+    }
+}
+
+/* .............. scetion1 ...................... */
+.section1 {
+    position: relative;
+    height: 100vh;
+    background-image: url(./assets/bg.jpg);
+    /* Add your correct image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container1 {
+    position: absolute;
+    bottom: 20px;
+}
+
+.text1 h1 {
+    font-size: 75px;
+}
+
+.btn1 {
+    border: 1px solid white;
+    color: white;
+    padding: 12px 40px 12px 40px;
+    white-space: nowrap;
+}
+
+.btn1:hover {
+    background-color: #3400d0;
+}
+
+@media (max-width:996px) {
+    .text1 h1 {
+        font-size: 65px;
+    }
+
+    .btn1 {
+        padding: 15px;
+    }
+}
+
+@media (max-width:853px) {
+    .text1 h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text1 h1 {
+        font-size: 45px;
+    }
+
+    .btn1 {
+        padding: 10px;
+        margin: 15px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 390px) {
+    .text1 h1 {
+        font-size: 35px;
+    }
+
+    .btn1 {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 344px) {
+    .text1 h1 {
+        font-size: 32px;
+    }
+}
+
+/* ............... section2 ................ */
+.text2 h2 {
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+/* Optimized text overlay */
+.text-overlay {
+    color: white;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-weight: 600;
+    line-height: 1;
+    z-index: 2;
+}
+
+/* Button overlay positioning */
+.button-overlay {
+    bottom: 8%;
+    left: 4%;
+    z-index: 2;
+}
+
+.overflow-container {
+    height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.overflow-container::-webkit-scrollbar {
+    display: none;
+}
+
+.images {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .overflow-container {
+        height: 90vh;
+    }
+
+    .images {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 853px) {
+    .overflow-container {
+        height: 70vh;
+    }
+
+    .images {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .text2 h2 {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .text-overlay {
+        top: 4%;
+        left: 3%;
+    }
+
+    .button-overlay {
+        bottom: 5%;
+        left: 4%;
+    }
+
+    .overflow-container {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .images {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* ............ section 3 + 4.................. */
+.btn3 {
+    padding: 10px 20px 10px 20px;
+    background-color: #3400d0;
+    color: white;
+}
+
+.btn3:hover {
+    color: #3400d0;
+    border: 1px solid #3400d0;
+    background-color: white;
+}
+
+.card3 {
+    margin: auto;
+    max-width: 600px;
+    border: none;
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+
+}
+
+.card-images img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-img,
+.card-img-hover {
+    position: absolute;
+    object-fit: cover;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.card-img-hover {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.card3:hover .card-img {
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+.card3:hover .card-img-hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-body3 {
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: absolute;
+    bottom: -12%;
+    left: 0;
+    right: 0;
+    transition: bottom 0.4s ease-in-out;
+    text-align: left;
+}
+
+.card3:hover .card-body3 {
+    bottom: 0;
+}
+
+.card-body3 .price {
+    color: grey;
+}
+
+.card-body3 p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.price {
+    font-weight: 600;
+    text-align: right;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media (max-width:1280px) {
+    .card3 {
+        margin-top: 15px;
+        height: 450px;
+    }
+
+    .card-body3 {
+        padding: 15px;
+        bottom: -15%;
+    }
+}
+
+@media (max-width:1024px) {
+    .card3 {
+        margin-top: 15px;
+        height: 400px;
+    }
+
+    .card-body3 {
+        padding: 15px;
+        bottom: -15%;
+    }
+}
+
+@media (max-width:996px) {
+    .card3 {
+        margin-top: 15px;
+        height: 550px;
+
+    }
+
+    .card-body3 {
+        padding: 15px;
+        bottom: -10%;
+    }
+}
+
+@media (max-width:576px) {
+    .card3 {
+        margin-top: 10px;
+        height: 500px;
+
+    }
+
+    .card-body3 {
+        padding: 10px;
+        bottom: -10%;
+    }
+}
+
+/* ............. section5 ................... */
+.btn5 {
+    background-color: #3400d0;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.btn5:hover {
+    color: #3400d0;
+    border: 1px solid #3400d0;
+    background-color: white;
+}
+
+.community-img {
+    width: 130px;
+}
+
+.text5 h2 {
+    font-size: 52px;
+}
+
+@media (max-width:1280px) {
+    .text5 h2 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width:996px) {
+    .text5 h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width:576px) {
+    .community {
+        display: flex;
+        justify-content: center;
+    }
+
+    .community-img {
+        width: 125px;
+    }
+
+    .text5 h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:476px) {
+    .community-img {
+        width: 95px;
+    }
+}
+
+@media (max-width:390px) {
+
+    .community-img {
+        width: 85px;
+    }
+}
+
+@media (max-width:344px) {
+    .community-img {
+        width: 70px;
+    }
+}
+
+/* ........... section 6 .............. */
+.btn6 {
+    background-color: #3400d0;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.btn6:hover {
+    color: #3400d0;
+    border: 1px solid #3400d0;
+    background-color: white;
+}
+
+
+.text6 h2 {
+    font-size: 3rem;
+}
+
+@media (min-width: 992px) {
+    .custom-img {
+        height: 130vh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text6 h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .text6 h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .text6 h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sec6-p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .btn6 {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .custom-img {
+        height: 80vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 344px) {
+    .text6 h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ........ section7 .............. */
+.text7 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+@media (max-width:576px) {
+    .text7 {
+        font-size: 30px;
+    }
+}
+
+/* ........... section8 ..........  */
+.text8 {
+    font-size: 50px;
+}
+
+.collapse_text {
+    font-size: 25px;
+}
+
+.faq {
+    width: 550px;
+}
+
+.faq p {
+    font-weight: 700;
+}
+
+@media (max-width:576px) {
+    .text8 {
+        font-size: 35px;
+    }
+
+    .collapse_text {
+        font-size: 18px;
+    }
+
+    .faq {
+        width: 320px;
+    }
+
+    .faq p {
+        font-weight: 600;
+    }
+}
+
+/* ..................... section9 .,,,,,,,,,.............. */
+.container9 {
+    position: relative;
+}
+
+.text9 {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 50%;
+}
+
+.text9 h2 {
+    font-size: 2.8125rem;
+    font-weight: 450;
+}
+
+.background_video {
+    width: 100%;
+    height: 120vh;
+}
+
+.video {
+    width: 100%;
+    height: 120vh;
+}
+
+.btn9 {
+    font-size: 0.75rem;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.btn9:hover {
+    border: 1px solid #3400d0;
+    background-color: #3400d0;
+}
+
+.card1,
+.card2 {
+    background-color: rgb(240, 238, 238);
+    padding: 20px;
+}
+
+.card1 {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 45rem;
+}
+
+.card2 {
+    bottom: 50px;
+}
+
+.form-input input {
+    border: none;
+    border-radius: 0;
+    height: 2.8rem;
+    background-color: #e0e0e0;
+}
+
+.form-input input::placeholder {
+    font-size: 12px;
+}
+
+.form-button {
+    color: white;
+    background-color: #3400d0;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.form-button:hover {
+    background-color: #f1f1f1;
+    color: #3400d0;
+}
+
+@media (max-width: 1280px) {
+    .text9 {
+        top: 2.5rem;
+        left: 2.5rem;
+        width: 60%;
+    }
+
+    .text9 h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text9 h2 {
+        font-size: 2rem;
+    }
+
+    .background_video {
+        height: 100vh;
+    }
+
+    .video {
+        height: 100vh;
+    }
+
+    .card1 {
+        right: 30px;
+    }
+}
+
+@media (max-width: 853px) {
+    .text9 h2 {
+        font-size: 1.625rem;
+    }
+
+    .card1 {
+        width: 36rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .card2 {
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card2 {
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .text9 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 430px) {
+    .text9 {
+        top: 0.625rem;
+        left: 1.25rem;
+    }
+
+    .text9 h2 {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 344px) {
+    .text9 h2 {
+        font-size: 1rem;
+    }
+}
+
+/* ........ footer ............. */
+.box1 {
+    border: 1px dashed #8f8d8d;
+}
+
+.box2,
+.box3 {
+    border-top: 1px dashed #8f8d8d;
+    border-right: 1px dashed #8f8d8d;
+    border-bottom: 1px dashed #8f8d8d;
+}
+
+.footer_list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+.footer-icon {
+    margin-left: -35px;
+}
+
+.footer-icon img,
+.icon1 img {
+    max-width: 90px;
+    height: auto;
+    margin-top: 30px;
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+
+    .footer-icon img,
+    .icon1 img {
+        max-width: 70px;
+        height: auto;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:576px) {
+    .footer_list a {
+        font-size: 15px;
+    }
+}
